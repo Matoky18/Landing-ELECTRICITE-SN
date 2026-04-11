@@ -141,6 +141,81 @@ html {
     height: 25px;
 }
 
+
+
+/* section avantage */
+.avantage {
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(162, 184, 103); */
+    align-items: center;
+    height: 80vh;
+}
+
+.avantage > ul > li >img {
+    width: 60px ;
+}
+
+.avantage > ul >li {
+    display: flex;
+    align-items: center;
+    /* background: maroon; */
+    gap: 20px;
+    list-style: none;
+    flex-direction: column;
+    font-family: "Roboto" ,serif;
+}
+
+/* .avantage > ul > li > span {
+    font-style: 2rem;
+} */
+
+.avantage > ul > li:first-child > span  {
+    background: linear-gradient(#7E0EAB,#330645) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.avantage > ul > li:nth-child(2) > span  {
+    background: linear-gradient(#B28D5F,#89664C) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.avantage > ul > li:nth-child(3) > span  {
+    background: linear-gradient(90deg,#0F0C93,#076da0) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.avantage > ul >li:nth-child(3) > img {
+    width: 45px ;
+}
+
+
+
+.avantage > ul {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* section avantage fin*/
+
+
+
+/* section services */
+
+/* section services fin */
+
+
+
+
 @media (min-width:769px) {
     .header-mobile {
         display: none;
