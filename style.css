@@ -590,6 +590,7 @@ html {
    
     
     .header-desktop {
+        display: none;
         position: fixed;
         display: flex;
         justify-content: space-between;
@@ -597,6 +598,7 @@ html {
         width: 100%;
         font-family: "Roboto" ,serif;
         height: 2.5rem;
+        max-width: 100%;
         color: whitesmoke;
         background: linear-gradient(-90deg,#000F89,#1b1818);
     }
@@ -661,6 +663,7 @@ html {
         max-width: 300px;
         width: 30vw;
         border: 0px;
+        box-sizing: border-box;
         color: whitesmoke;
     }
 
@@ -687,7 +690,7 @@ html {
     }
 
     .avantage > ul > li {
-        width: 300px;
+       
     }
 
     /* section avantage fin */
@@ -704,35 +707,107 @@ html {
      /* section service fin */
 
 
+
+
      /* section avis */
      .avis-container-mobile {
         display: none;
      }
 
      .avis-container-desktop {
-        height: 100vh
+        height: 70vh;
+        display :flex;
+        align-items: center;
+        justify-content: center;
      }
+
+     .avis-container-desktop > ul > h1 {
+        width: 80%;
+        text-align: center;
+     }
+
+
+
+     .avis-container-desktop > ul   {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        height: 100%;
+        background: orange;
+        overflow-y: scroll;
+        width: 50%;
+        padding-inline: 50px;
+        box-sizing: border-box;
+
+    }
+
+
+     .avis-container-desktop ul > li  {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 500px;
+
+    }
+     .avis-container-desktop ul > li > p {
+        font-family: "Crimson text" ,serif;
+        font-size: larger;
+
+    }
+
+    .avis-container-desktop > ul > li > h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-family: "Roboto" ,serif;
+        
+    }
+    .avis-container-desktop > ul > li > h3 > .line {
+        border-bottom: 1px solid black;
+        height: 1px;
+        width: 70%;
+    }
+
+
+
 
      .avis-container-desktop ul > li > .stars > .star > svg {
         width: 25px;
      }
 
+
      .avis-container-desktop  span {
+        display: block;
         height: 100%;
-        width: 50vw;
-        background: #57bb1d;
+        width: 50%;
+        background-image: url("/image/fast1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover ;
      }
 
 
      /* section avis fin */
 
 
-     /* section avantage */
-     .avantage > ul {
+
+
+     /* section information */
+     .info-container > ul {
         display: flex;
         flex-direction: row;
+        height: auto;
+        padding: 0px;
      }
-     /* section avantage fin*/
+     /* section information fin*/
 
 
 }
