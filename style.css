@@ -7,6 +7,12 @@
     padding: 0px;
 }
 
+button:hover {
+    cursor: pointer;
+    
+}
+
+
 html {
     margin: 0px;
 }
@@ -20,7 +26,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: red;
+    /* background: red; */
     width: 100%;
     height: 100vh;
     background-image: url();
@@ -45,41 +51,38 @@ html {
     justify-content: center;
 }
 
-.header-mobile li {
+.header-mobile  li {
     list-style: none;
     font-family: "Roboto" ,serif;
 
 }
 
-
-.header-mobile ul .ul-top span:first-child {
-    /* border-right: whitesmoke 1px solid; */
-    background: hotpink;
-
+.header-mobile > u >li {
+    /* background: #a51665; */
 }
 
-.header-mobile ul .ul-top span:last-child {
-    background: slateblue;
-    color: red;
+.header-mobile > ul > li {
+    height: 50px;
+    /* background: #13db1d; */
 }
 
-.header-mobile .ul-top span {
-    background: magenta;
-    box-sizing: border-box;
+.header-mobile > ul > li >span:first-child {
+    /* color: #dd15e4; */
+    display: flex; 
+    align-items: end;
+    height: 100%;
 }
 
-
-
-.header-mobile .ul-top {
+.header-mobile > .ul-top {
     display: flex;
     flex-direction: row-reverse;
     margin-inline: 15px ;
-    background: forestgreen;
+    /* background: forestgreen; */
     box-sizing: border-box;
     height: 100px;
 }
 
-.header-mobile h1 {
+.header-mobile > h1 {
     font-family: "Fugaz one" , serif;
     font-weight: normal;
     letter-spacing: 10px;
@@ -101,7 +104,7 @@ html {
     gap: 0px;
 }
 
-.center-hero-mobile li {
+.center-hero-mobile > li {
     display: flex;align-items: center;
     justify-content: center;
     text-align: center;
@@ -112,11 +115,11 @@ html {
     font-family: "Roboto" ,serif;
 }
 
-.center-hero-mobile p {
+.center-hero-mobile > p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(100, 100, 206);
+    /* background: rgb(100, 100, 206); */
     padding-bottom: 5px;
     font-size: 1.2rem;
     font-family: "Roboto",serif;
@@ -137,6 +140,7 @@ html {
     height: 50px;
     margin-bottom: 25px;
     box-sizing: border-box;
+    z-index: 50;
 }
 
 .icon-phone {
@@ -224,7 +228,7 @@ html {
 .container-service > h1,p {
     font-family: "Roboto" ,serif;
     text-align: center;
-    background: salmon;
+    /* background: salmon; */
     width: 90%;
     box-sizing: border-box;
 }
@@ -238,7 +242,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column ;
-    background: #64ad3a;
+    /* background: #64ad3a; */
     gap: 30px;
 }
 
@@ -270,11 +274,11 @@ html {
 }
 
 .container-service > ul > li > p {
-    background: rgba(206, 68, 68, 0.671);
+    /* background: rgba(206, 68, 68, 0.671); */
 }
 
 .container-service > ul > li > h2 {
-    background: rgb(12, 209, 29);
+    /* background: rgb(12, 209, 29); */
 }
 
 .container-service > ul >li > img {
@@ -293,7 +297,7 @@ html {
 
 /* section avis */
 .avis-container-mobile {
-    background: mediumturquoise ;
+    /* background: mediumturquoise ; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -301,7 +305,7 @@ html {
 }
 
 .avis-container-mobile > h1 , h3:nth-child(2) {
-    background: #1da36b;
+    /* background: #1da36b; */
     font-weight: normal;
     text-align: center;
 }
@@ -557,8 +561,178 @@ html {
 /* footer fin */
 
 
+
+
+
+
+
+
+
+
+
+
 @media (min-width:769px) {
-    .header-mobile {
+
+    .hero-mobile {
         display: none;
     }
+    .cta-mobile-hero {
+        display: none;
+    }
+    .hero-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+    }
+
+   
+    
+    .header-desktop {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: "Roboto" ,serif;
+        height: 2.5rem;
+        color: whitesmoke;
+        background: linear-gradient(-90deg,#000F89,#1b1818);
+    }
+
+
+    .hero-desktop >  h1 {
+        display: flex;
+        margin-top: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #060561;
+        height: 100px;
+        color: whitesmoke;
+        font-family:  "Fugaz one" ,serif;
+        letter-spacing: 20px;
+    }
+
+      .header-desktop > ul {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: #1777b8; */
+        padding-inline: 2rem ;
+        height: 100%;
+    }
+
+    .header-desktop >  ul > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        border-right: whitesmoke 1px solid;
+        padding-inline: 30px;
+        gap: 5px;
+        font-size: clamp(0.8rem,1.5vw ,1rem);
+    }
+
+    .header-desktop > ul > li > svg {
+        width: 20px;
+    }
+
+
+    .hero-desktop > span  {
+        /* background: #e79519; */
+        width: 100%;
+        height: 50vh;
+        background-image: url("/image/welcomephoto-desktop-1.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-desktop >  .bouton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100%;
+        background: #f10909d8;
+        max-width: 300px;
+        width: 30vw;
+        border: 0px;
+        color: whitesmoke;
+    }
+
+    .header-desktop > button > svg {
+        width: 20px;
+    }
+
+    .header-desktop button > span {
+        font-size: medium;
+        font-family: "Roboto" ,serif;
+    }
+
+
+
+    /* section avantage */
+    .avantage {
+        height: auto;
+        background: darkblue;
+    }
+
+    .avantage > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .avantage > ul > li {
+        width: 300px;
+    }
+
+    /* section avantage fin */
+
+
+
+     /* section service */
+     .container-service > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: transparent;
+     }
+     /* section service fin */
+
+
+     /* section avis */
+     .avis-container-mobile {
+        display: none;
+     }
+
+     .avis-container-desktop {
+        height: 100vh
+     }
+
+     .avis-container-desktop ul > li > .stars > .star > svg {
+        width: 25px;
+     }
+
+     .avis-container-desktop  span {
+        height: 100%;
+        width: 50vw;
+        background: #57bb1d;
+     }
+
+
+     /* section avis fin */
+
+
+     /* section avantage */
+     .avantage > ul {
+        display: flex;
+        flex-direction: row;
+     }
+     /* section avantage fin*/
+
+
 }
