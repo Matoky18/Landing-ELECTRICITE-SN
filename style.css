@@ -58,7 +58,7 @@ html {
 .header-mobile >  .ul-top {
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     width: 100%;
     max-width: 450px;  
