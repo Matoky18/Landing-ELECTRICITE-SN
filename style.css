@@ -141,18 +141,19 @@ html {
     background-size: cover;
     width: 100%;
     color: whitesmoke;
+    font-weight: 300;
 }
 
 .center-hero-mobile > li {
     display: flex;align-items: center;
     justify-content: center;
     text-align: center;
-    list-style: none;
-    height: 50px;
-    font-size: 1.8rem;
+    list-style: none;    
+    font-size: 1.5rem;
     width: 70vw;
     font-family: "Roboto" ,serif;
 }
+
 
 .center-hero-mobile > p {
     display: flex;
@@ -164,7 +165,20 @@ html {
     font-family: "Roboto",serif;
     width: 80vw;
     text-align: center;
+}
+
+.center-hero-mobile > p {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+
+.center-hero-mobile > p > span {   
     border-bottom: white solid 1px;
+    width: 75vw;
+    max-width: 500px;
+
 }
 
 .cta-mobile-hero {
@@ -855,6 +869,7 @@ html {
      .info-container {
         /* background: rebeccapurple; */
         width: 100%;
+        
      }
 
      .info-container > ul {
