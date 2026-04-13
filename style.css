@@ -24,7 +24,6 @@ html {
 .hero-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     /* background: red; */
     width: 100%;
@@ -34,52 +33,53 @@ html {
 
 
 
+
+
+/* header mobile */
+
+
 .header-mobile {
     display: flex;
     flex-direction: column;
     background: linear-gradient(-90deg,#1B1818,#000F89);
     width: 100%;
     color: whitesmoke;
-    padding-bottom: 20px ;
+    padding: 25px ;
+    /* padding-bottom: px; */
+    /* padding-bottom: 25px ; */
 }
 
-.header-mobile ul {
+.header-mobile .ul-top {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+   
 }
 
-.header-mobile  li {
-    list-style: none;
-    font-family: "Roboto" ,serif;
 
-}
 
-.header-mobile > u >li {
-    /* background: #a51665; */
-}
-
-.header-mobile > ul > li {
-    height: 50px;
-    /* background: #13db1d; */
-}
-
-.header-mobile > ul > li >span:first-child {
+.header-mobile > .ul-top > span:first-child {
     /* color: #dd15e4; */
     display: flex; 
     align-items: end;
-    height: 100%;
 }
 
-.header-mobile > .ul-top {
+.header-mobile >  .ul-top {
     display: flex;
-    flex-direction: row-reverse;
-    margin-inline: 15px ;
-    /* background: forestgreen; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    /* margin-inline: 15px ; */
+    /* background: rgb(219, 138, 44); */
     box-sizing: border-box;
     height: 100px;
+}
+
+
+
+
+.header-mobile > .ul-top > span:nth-child(2) {
+    text-align: right;
 }
 
 .header-mobile > h1 {
@@ -88,13 +88,20 @@ html {
     letter-spacing: 10px;
     font-size: clamp(1rem,6vw,3.5rem);
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     box-sizing: border-box;
     padding-inline: 20px;
+    background: rebeccapurple;
 }
+
+
+/* fin header mobile */
+
+
 
 .center-hero-mobile {
     display: flex;
@@ -222,6 +229,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-block: 50px;
 
 }
 
@@ -230,7 +238,14 @@ html {
     text-align: center;
     /* background: salmon; */
     width: 90%;
+    max-width: 700px;
     box-sizing: border-box;
+}
+
+.container-service > h1 {
+    font-family: "Playfair Display" ,serif;
+    color: #044370;
+    margin-bottom: 15px;
 }
 
 .container-service > p {
@@ -243,7 +258,7 @@ html {
     justify-content: center;
     flex-direction: column ;
     /* background: #64ad3a; */
-    gap: 30px;
+    gap: 25px;
 }
 
 .container-service > ul > li {
@@ -257,13 +272,19 @@ html {
     border: #11145248 1px solid;
     width: 90vw;
     padding:20px ;
-    max-width: 450px;
+    max-width: 350px;
     box-sizing: border-box;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.205);
 }
 
 .container-service > ul > li > button {
     width: 100%;
     height: 50px;
+    border: 1px #ED1B24 solid;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 2.5px;
+    font-size: larger;
+    color: #00034A;
 }
 
 .container-service > ul > li > p , h2 {
@@ -274,17 +295,54 @@ html {
 }
 
 .container-service > ul > li > p {
-    /* background: rgba(206, 68, 68, 0.671); */
+    font-family: "Roboto" ,serif;
+    font-weight: 300;
+    padding-top: 5px;
+    /* background: #89ce2e; */
+    box-sizing: border-box;
+    width: 100%;
+    /* font-size: clamp(0.9); */
+    font-size: 0.9rem ;
+
 }
 
 .container-service > ul > li > h2 {
     /* background: rgb(12, 209, 29); */
+    font-family: "Roboto" ;
+    color: #263744d8;
+    width: 100%;
+    padding: 0px;
 }
 
-.container-service > ul >li > img {
+.container-service > ul >li:first-child > .img {
     width: 100%;
-    height: 20%;
+    height: 250px;
     margin-block: 25px ;
+    background-image: url("/image/depa.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2.5px;
+}
+.container-service > ul >li:nth-child(2) > .img {
+    width: 100%;
+    height: 250px;
+    margin-block: 25px ;
+    background-image: url("/image/install.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2.5px;
+}
+.container-service > ul >li:nth-child(3) > .img {
+    width: 100%;
+    height: 250px;
+    margin-block: 25px ;
+    background-image: url("/image/secu.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2.5px;
 }
 
 /* section services fin */
@@ -302,11 +360,12 @@ html {
 }
 
 .avis-container-mobile {
-    /* background: mediumturquoise ; */
+    background: mediumturquoise ;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .avis-container-mobile > h1 , h3:nth-child(2) {
@@ -499,13 +558,20 @@ html {
 
 .location-container > span >h1 {
     font-family: "crimson text" , serif;
-    width: auto;
     /* background: #24be71; */
     font-weight: normal;
     box-sizing: border-box;
     font-size: x-large;
-    border-bottom: rgb(0, 0, 0) 1px solid;
+    
+    /* border-bottom: rgb(0, 0, 0) 1px solid; */
     padding-bottom: 5px;
+}
+
+.location-container > span > h1 > .line {
+    width: 100%;
+    max-width: 125px;
+    border: solid black 1px;
+    box-sizing: border-box;
 }
 
 .location-container > span > p {
@@ -513,7 +579,8 @@ html {
     box-sizing: border-box;
     text-align: left;
     font-weight: 300;
-    font-size: smaller;
+    font-size: normal;
+    padding-bottom: 25px;
 }
 
 .location-container > span {
@@ -576,6 +643,7 @@ html {
         height: 2.5rem;
         color: whitesmoke;
         background: linear-gradient(-90deg,#000F89,#1b1818);
+        margin: 0px;
     }
 
 
@@ -637,8 +705,8 @@ html {
         align-items: center;
         width: 100%;
         background: palevioletred;
-        height: 80vh;
-        gap: 0px;
+        /* height: 80vh; */
+        gap: -5000px;
     }
 
     .hero-desktop > h1 {
@@ -706,11 +774,16 @@ html {
      /* section service */
      .container-service > ul {
         display: flex;
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
         background: transparent;
+        padding: 1.5rem;
+        gap: 1.5rem;
      }
      /* section service fin */
+
+
 
 
      /* section avis */
@@ -747,11 +820,27 @@ html {
      }
      /* section avantage fin*/
 
-
+     .info-container {
+        /* background: rebeccapurple; */
+        width: 100%;
+     }
 
      .info-container > ul {
         display: flex;
         flex-direction: row;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+     }
+
+     .info-container > ul > li {
+        /* background: mediumvioletred; */
+        width: 150px;
+     }
+
+     .info-container > ul > li {
+        padding: 0px;
+        margin: 0px;
+        gap: red;
      }
 
 
