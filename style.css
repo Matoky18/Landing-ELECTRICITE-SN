@@ -734,14 +734,20 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 0.5rem;
         height: 100%;
-        background: red;
+        background: rgb(177, 12, 12);
+        border: none;
         color: whitesmoke;
         width: 25vw;
         max-width: 300px;
         font-size: large;
     }
+
+    .header-desktop > button > svg {
+        width: 20px;
+    }
+
     /* header desktop fin */
 
 
@@ -749,11 +755,11 @@ html {
     .hero-desktop {
         display: flex;
         align-items: center;
-        align-items: center;
+        justify-content: flex-start;
         width: 100%;
-        background: palevioletred;
+        /* background: palevioletred; */
         /* height: 80vh; */
-        gap: -5000px;
+       
     }
 
     .hero-desktop > h1 {
@@ -763,7 +769,7 @@ html {
 
     .hero-desktop > h2 {
         text-align: center;
-        background: peru;
+        /* background: peru; */
         width: 70vw;
     }
 
@@ -773,7 +779,7 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 50%;
+        height: 65%;
         background-image: url("/image/welcomephoto-desktop-1.jpg") ;
         background-repeat: no-repeat;
         background-size: cover;
@@ -782,6 +788,45 @@ html {
         margin: 0px;
     } 
 
+    .image-hero-desktop > h2 {
+        color: whitesmoke;
+    }
+
+    .image-hero-desktop > .cta23 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+
+
+    .image-hero-desktop > .cta23 > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        height: 50px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background: transparent;
+        width: 25vw;
+        max-width: 300px;
+        font-size: large;
+        border-radius: 5px;
+
+    }
+
+
+    .image-hero-desktop > .cta23 > button:first-child {
+        background: rgb(177, 12, 12);
+        
+    }
+    .image-hero-desktop > .cta23 > button:nth-child(2) {
+        border: solid rgb(177, 12, 12) 2px;
+        color: rgb(177, 12, 12);
+        
+    }
 
     /* hero destop fin */
     
