@@ -37,7 +37,7 @@ html {
 .header-mobile {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg,#1B1818,#000F89);
+    background: linear-gradient(-90deg,#1B1818,#000F89);
     width: 100%;
     color: whitesmoke;
     padding-bottom: 20px ;
@@ -406,9 +406,14 @@ html {
     justify-content: center;
     background: linear-gradient(90deg,#000F89,#000423);
     padding-block: 2.5rem ;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
     gap:2.5rem;
     color: whitesmoke;
+}
+
+.info-container > p {
+    /* background: red; */
+    margin-top : -1.25rem ;
 }
 
 .info-container > ul {
@@ -416,7 +421,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .info-container > ul > li {
@@ -428,8 +433,7 @@ html {
     flex-direction: column;
     /* background: violet; */
     width: 90vw;
-    max-width: 300px;
-    
+    max-width: 300px;   
 
 }
 
@@ -545,7 +549,7 @@ html {
 
 @media (min-width:1024px ) {
 
-
+    /* header desktop */
     .hero-mobile {
         display: none;
     }
@@ -602,8 +606,8 @@ html {
         justify-content: center;
         list-style: none;
         min-width: 150px;
-        gap: 5px;
-        padding-right: 25px;
+        gap: 0.5rem;
+        padding-right: 2rem;
         border-right: whitesmoke solid 1px;
     }
     .header-desktop > ul > li > svg {
@@ -615,7 +619,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
         height: 100%;
         background: red;
         color: whitesmoke;
@@ -623,6 +627,49 @@ html {
         max-width: 300px;
         font-size: large;
     }
+    /* header desktop fin */
+
+
+    /* hero destop */
+    .hero-desktop {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+        background: palevioletred;
+        height: 80vh;
+        gap: 0px;
+    }
+
+    .hero-desktop > h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-desktop > h2 {
+        text-align: center;
+        background: peru;
+        width: 70vw;
+    }
+
+
+    .hero-desktop > .image-hero-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        background-image: url("/image/welcomephoto-desktop-1.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top ;
+        width: 100%;
+        margin: 0px;
+    } 
+
+
+    /* hero destop fin */
+    
 
 
 }
@@ -699,6 +746,13 @@ html {
         flex-direction: row;
      }
      /* section avantage fin*/
+
+
+
+     .info-container > ul {
+        display: flex;
+        flex-direction: row;
+     }
 
 
 }
