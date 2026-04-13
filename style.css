@@ -41,61 +41,83 @@ html {
 .header-mobile {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-90deg,#1B1818,#000F89);
+    align-items: center;
+    background: linear-gradient(180deg,#0A135D,#1528C3);
     width: 100%;
     color: whitesmoke;
     padding: 25px ;
+    gap: 25px;
+    box-sizing: border-box;
+    /* height: auto; */
+    max-height: 200px;
     /* padding-bottom: px; */
     /* padding-bottom: 25px ; */
 }
 
-.header-mobile .ul-top {
+
+.header-mobile >  .ul-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;  
+    
+    /* background: rgb(219, 138, 44); */
+    box-sizing: border-box;
    
 }
 
 
 
-.header-mobile > .ul-top > span:first-child {
-    /* color: #dd15e4; */
-    display: flex; 
-    align-items: end;
-}
 
-.header-mobile >  .ul-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
-    /* margin-inline: 15px ; */
-    /* background: rgb(219, 138, 44); */
+.header-mobile > .ul-top > span {
+   padding-inline: 25px ;
+    font-family: "Roboto" ,serif;
+    gap: 15px;
+    /* background: #23bb5d; */
+    width: 90%;
+    max-width: 600px;
+    font-size: larger;
+    font-weight: 300;
     box-sizing: border-box;
-    height: 100px;
+    
 }
 
-
+.header-mobile > .ul-top > span > svg {
+    width: 25px;
+}
 
 
 .header-mobile > .ul-top > span:nth-child(2) {
-    text-align: right;
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+    border-left: solid white 1px;
 }
+
+.header-mobile > .ul-top > span:nth-child(1) {
+    display: flex;
+    justify-content: end;
+    align-items: center ;
+    border-right: white 1px solid;
+}
+
 
 .header-mobile > h1 {
     font-family: "Fugaz one" , serif;
     font-weight: normal;
     letter-spacing: 10px;
-    font-size: clamp(1rem,6vw,3.5rem);
+    font-size: clamp(1.5rem,3vw,2.2rem);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* height: 10vh; */
+    height: fit-content;
     box-sizing: border-box;
     padding-inline: 20px;
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
 }
 
 
@@ -103,12 +125,22 @@ html {
 
 
 
+
+
+
 .center-hero-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: calc(100vh - 200px);
     flex-direction: column;
     gap: 0px;
+    background-image: url("/image/welcomephoto-mobile.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: whitesmoke;
 }
 
 .center-hero-mobile > li {
