@@ -109,6 +109,9 @@ html {
     font-weight: normal;
     letter-spacing: 10px;
     font-size: clamp(1.5rem,3vw,2.2rem);
+    background: linear-gradient(0deg,#FFFFFF,#999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     text-align: center;
     align-items: center;
@@ -693,16 +696,21 @@ html {
         margin: 0px;
     }
 
-
-    .hero-desktop >  h1 {
+    .hero-desktop > h1 {
         display: flex;
         margin-top: 2.5rem;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: #060561;
         height: 100px;
-        color: whitesmoke;
+        background: #060561;
+    }
+
+    .hero-desktop >  h1 >span {       
+        
+        background: linear-gradient(90deg,#FFFFFF,#858282);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family:  "Fugaz one" ,serif;
         letter-spacing: 20px;
     }
@@ -770,7 +778,10 @@ html {
     .hero-desktop > h2 {
         text-align: center;
         /* background: peru; */
-        width: 70vw;
+        width: 500px;
+
+      
+       
     }
 
 
@@ -785,11 +796,17 @@ html {
         background-size: cover;
         background-position: top ;
         width: 100%;
-        margin: 0px;
+        gap: 25px;
     } 
 
     .image-hero-desktop > h2 {
         color: whitesmoke;
+        font-family: "Roboto" ,serif;
+        font-weight: 200;
+       
+        /* font-size: clamp(,,) ; */
+        font-size: 15px;
+
     }
 
     .image-hero-desktop > .cta23 {
@@ -806,20 +823,18 @@ html {
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        height: 50px;
         border: none;
         color: rgb(255, 255, 255);
         background: transparent;
-        width: 25vw;
-        max-width: 300px;
-        font-size: large;
-        border-radius: 5px;
+        width: 250px;
+        font-size: larger;
+        height: 60px;
 
     }
 
 
     .image-hero-desktop > .cta23 > button:first-child {
-        background: rgb(177, 12, 12);
+        background: #8C0F0F;
         
     }
     .image-hero-desktop > .cta23 > button:nth-child(2) {
