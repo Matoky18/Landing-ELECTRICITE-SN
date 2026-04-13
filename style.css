@@ -42,14 +42,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(180deg,#0A135D,#1528C3);
     width: 100%;
     color: whitesmoke;
     padding: 25px ;
     gap: 25px;
     box-sizing: border-box;
-    /* height: auto; */
-    max-height: 200px;
+    height: 250px;
     /* padding-bottom: px; */
     /* padding-bottom: 25px ; */
 }
@@ -58,7 +58,7 @@ html {
 .header-mobile >  .ul-top {
     display: flex;
     flex-direction: column-reverse;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     width: 100%;
     max-width: 450px;  
@@ -74,7 +74,7 @@ html {
 .header-mobile > .ul-top > span {
    padding-inline: 25px ;
     font-family: "Roboto" ,serif;
-    gap: 15px;
+    gap: 5px;
     /* background: #23bb5d; */
     width: 90%;
     max-width: 600px;
@@ -510,8 +510,9 @@ html {
     align-items: center;
     justify-content: center;
     background: linear-gradient(90deg,#000F89,#000423);
-    padding-block: 2.5rem ;
-    /* padding-bottom: 150px; */
+    /* padding-block: 2.5rem ; */
+    padding-bottom: 100px;
+    padding-top: 2rem;
     gap:2.5rem;
     color: whitesmoke;
 }
@@ -869,7 +870,7 @@ html {
      .info-container {
         /* background: rebeccapurple; */
         width: 100%;
-        
+
      }
 
      .info-container > ul {
