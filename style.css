@@ -132,7 +132,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
     flex-direction: column;
     gap: 0px;
     background-image: url("/image/welcomephoto-mobile.jpg");
