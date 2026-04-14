@@ -930,27 +930,85 @@ html {
 
 
 
+
+
+
+
+
+
+
      /* section avis */
      .avis-container-mobile {
         display: none;
      }
 
      .avis-container-desktop {
-        height: 100vh
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
      }
+
+     
+
+     .avis-container-desktop > ul {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        padding-left: 10vw;
+        background: plum;
+        height: 80vh;
+        width: 50vw;
+     }
+
+     .avis-container-desktop > ul > h1 {
+        background: moccasin;
+        width: 100%;
+        text-align: center;
+     }
+
+     .avis-container-desktop > ul > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 500px;
+        list-style: none;
+        background: rgb(156, 236, 26);
+    }
+
+    .avis-container-desktop > ul > li > p {
+        text-align: center;
+        background: maroon;
+    } 
 
      .avis-container-desktop ul > li > .stars > .star > svg {
         width: 25px;
+        color: red;
      }
 
      .avis-container-desktop  span {
         height: 100%;
-        width: 50vw;
-        background: #57bb1d;
+        width: 40vw;
+        background-image: url("/image/fast1.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
      }
 
 
      /* section avis fin */
+
+
+
+
+
+
+
+
+
+
 
 
      /* section avantage */
