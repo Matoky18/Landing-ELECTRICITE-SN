@@ -210,9 +210,23 @@ html {
 .avantage {
     display: flex;
     flex-direction: column;
-    /* background: rgb(162, 184, 103); */
-    align-items: center;
-    height: 80vh;
+    justify-content: center;
+    /* background: rgb(167, 218, 27); */
+    /* align-items: center; */
+    background: hsl(100, 43%, 99%);
+    gap: 25px;
+    padding: 50px;
+}
+
+.avantage > h1 {
+    font-family: "Crimson text",serif;
+    background: linear-gradient(90deg,#00108985,#15172680);
+    font-weight: 100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+
 }
 
 .avantage > ul > li >img {
@@ -222,16 +236,28 @@ html {
 .avantage > ul >li {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* background: maroon; */
     gap: 20px;
     list-style: none;
     flex-direction: column;
     font-family: "Roboto" ,serif;
+     background: rgb(255, 255, 255);
+     width: 100%;
+     max-width: 350px;
+     padding-block: 50px;
+     padding-inline: 25px;
+     box-sizing: border-box;
+     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.10);
 }
 
-/* .avantage > ul > li > span {
-    font-style: 2rem;
-} */
+.avantage > ul > li > span {
+    text-align: center;
+    font-size: 1.5rem;
+   
+}
+
+
 
 .avantage > ul > li:first-child > span  {
     background: linear-gradient(#7E0EAB,#330645) ;
@@ -279,7 +305,7 @@ html {
     align-items: center;
     justify-content: center;
     padding-block: 50px;
-
+    
 }
 
 .container-service > h1,p {
@@ -775,15 +801,7 @@ html {
         text-align: center;
     }
 
-    .hero-desktop > h2 {
-        text-align: center;
-        /* background: peru; */
-        width: 500px;
-
-      
-       
-    }
-
+  
 
     .hero-desktop > .image-hero-desktop {
         display: flex;
@@ -803,9 +821,10 @@ html {
         color: whitesmoke;
         font-family: "Roboto" ,serif;
         font-weight: 200;
-       
-        /* font-size: clamp(,,) ; */
-        font-size: 15px;
+        width: 525px;
+        /* background: firebrick; */
+        /* font-size: clamp(1.3rem,,) ; */
+        font-size: 1.3rem;
 
     }
 
@@ -827,6 +846,7 @@ html {
         color: rgb(255, 255, 255);
         background: transparent;
         width: 250px;
+        box-sizing: border-box;
         font-size: larger;
         height: 60px;
 
@@ -845,7 +865,9 @@ html {
 
     /* hero destop fin */
     
-
+    .container-service {
+        margin-top: -20vh;
+     }
 
 }
 
@@ -862,7 +884,7 @@ html {
     .avantage {
         height: auto;
         background: darkblue;
-        display: none;
+        /* display: none; */
     }
 
     .avantage > ul {
@@ -879,6 +901,7 @@ html {
 
 
      /* section service */
+     
      .container-service > ul {
         display: flex;
         align-items: center;
@@ -918,19 +941,33 @@ html {
 
      /* section avantage */
 
+     .avantage {
+        background: transparent;
+     }
 
+     .avantage > h1 {
+        font-size: 3rem;
+     }
 
 
      .avantage > ul {
         display: flex;
         flex-direction: row;
      }
+     .avantage > ul > li {
+        height: 300px;
+        width: 450px;
+     }
+
+    
+
      /* section avantage fin*/
 
      .info-container {
         /* background: rebeccapurple; */
         width: 100%;
-
+        padding-bottom: 25px;
+        box-sizing: content-box;
      }
 
      .info-container > ul {
@@ -938,6 +975,7 @@ html {
         flex-direction: row;
         overflow-x: hidden;
         flex-wrap: wrap;
+        
      }
 
      .info-container > ul > li {
