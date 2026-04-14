@@ -253,7 +253,7 @@ html {
 
 .avantage > ul > li > span {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1rem,1.5vw,1.5rem);
    
 }
 
@@ -435,12 +435,13 @@ html {
 }
 
 .avis-container-mobile {
-    background: mediumturquoise ;
+    /* background: mediumturquoise ; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    /* padding: 250px; */
 }
 
 .avis-container-mobile > h1 , h3:nth-child(2) {
@@ -452,14 +453,15 @@ html {
     width: 90vw;
     font-family: "Fugaz one" ,serif;
     font-weight: normal;
-    font-size: larger;
+    font-size: x-large;
     background: linear-gradient(#131D6E,#090660);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.avis-container-mobile > h3:nth-child(2)  {
+.avis-container-mobile > h3:nth-child(1)  {
     font-weight: normal;
     font-family: "Crimson text" ,serif;
+    color: #000F89;
 }
 
 .avis-container-mobile > ul {
@@ -472,11 +474,13 @@ html {
     background-position: top;
     background-repeat: no-repeat;
     padding-block: 30px ;
-    height: 70vh;
-    width: 100%;
+    height: 70%;
+    /* width: 1000%; */
     gap: 3.5rem;
     overflow-y: scroll;
+    box-sizing: border-box;
     margin: 0px;
+    max-width: none;
 }
 
 .avis-container-mobile > ul > li {
@@ -485,8 +489,8 @@ html {
     align-items: center;
     flex-direction: column;
     /* background: #b113a9; */
-    width: 90%;
-    max-width: 400px;
+    /* width: 90%; */
+    /* max-width: 400px; */
     gap: 20px;
     box-sizing: border-box;
 }
