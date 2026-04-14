@@ -192,11 +192,15 @@ html {
     justify-content: center;
     gap: 15px;
     width: 90vw;
-    max-width: 300px;
+    max-width: 350px;
     height: 50px;
     margin-bottom: 25px;
     box-sizing: border-box;
     z-index: 50;
+    background: #D03434;
+    border: none;
+    color: whitesmoke;
+    font-size: 1.25rem;
 }
 
 .icon-phone {
@@ -450,13 +454,17 @@ html {
     text-align: center;
 }
 .avis-container-mobile > h1  {
-    width: 90vw;
     font-family: "Fugaz one" ,serif;
     font-weight: normal;
     font-size: x-large;
     background: linear-gradient(#131D6E,#090660);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* background: red; */
+    /* width: 100%; */
+    margin-inline: 50px;
+    margin-bottom: 25px;
+
 }
 .avis-container-mobile > h3:nth-child(1)  {
     font-weight: normal;
@@ -472,15 +480,16 @@ html {
     justify-content: flex-start;
     background-image: url("/image/fast.jpg");
     background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-block: 30px ;
+    padding-block: 50px ;
     height: 70%;
-    /* width: 1000%; */
-    gap: 3.5rem;
+    width: 100%;
+    max-width: 500px;
+    gap: 25px;
     overflow-y: scroll;
     box-sizing: border-box;
-    margin: 0px;
-    max-width: none;
+    margin-top: 50px;
 }
 
 .avis-container-mobile > ul > li {
@@ -489,19 +498,20 @@ html {
     align-items: center;
     flex-direction: column;
     /* background: #b113a9; */
-    /* width: 90%; */
-    /* max-width: 400px; */
-    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding-inline: 25px;
+    gap: 25px;
     box-sizing: border-box;
 }
 
 .avis-container-mobile > ul > li > p{
+    font-family: serif;
     color: rgb(255, 255, 255);
     /* background: #0f30c7; */
     background: transparent;
-    width: 100%;
-    letter-spacing: 2px;
-    font-weight: 100;
+    max-width: 500px;
+    letter-spacing: 2.5px;
 
 }
 .avis-container-mobile > ul > li > h3{
