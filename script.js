@@ -6,9 +6,9 @@ const totalSliders = document.querySelectorAll(".ul-slider-container > li")
 // cta bouton 
 const ctabutton = document.querySelectorAll(".cta-button")
     const phoneNumber = "261375078812"
-const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const isMobile = window.matchMedia("(max-width: 768px").matches;
 
-console.log(ctabutton,isMobile,navigator.userAgent)
+console.log(ctabutton,isMobile,navigator.userAgent,window.innerWidth)
 
 ctabutton.forEach(cta => {
 
@@ -17,7 +17,8 @@ ctabutton.forEach(cta => {
     if (isMobile) {
         window.location.href = `tel:+${phoneNumber}`
     } else {
-        window.location.href = `https://wa.me/${phoneNumber}?text=Bonjour`
+        window.open(`https://wa.me/${phoneNumber}?text=Bonjour`);
+        console.log("desktop")
     }
 
 
