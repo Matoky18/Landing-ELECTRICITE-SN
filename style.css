@@ -46,10 +46,11 @@ html {
     background: linear-gradient(180deg,#0A135D,#1528C3);
     width: 100%;
     color: whitesmoke;
-    padding: 25px ;
+    padding-inline: 25px ;
     gap: 25px;
     box-sizing: border-box;
-    height: 250px;
+    padding-block: 25px;
+    height: 200px;
     /* padding-bottom: px; */
     /* padding-bottom: 25px ; */
 }
@@ -135,7 +136,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 250px);
+    padding-bottom: 25vh;
+    height: calc(100vh - 200px);
     flex-direction: column;
     gap: 0px;
     background-image: url("/image/welcomephoto-mobile.jpg");
