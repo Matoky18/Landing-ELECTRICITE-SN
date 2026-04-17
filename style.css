@@ -981,6 +981,7 @@ html {
         flex-direction: column ;
         align-items: center;
         padding-left: 10vw;
+        padding-right: 50px;
         /* background: plum; */
         height: 80vh;
         width: 50vw;
