@@ -1086,7 +1086,7 @@ html {
 
 
 
-  
+  /* section footer info desktop  */
 
      .info-container {
         /* background: rebeccapurple; */
@@ -1100,19 +1100,20 @@ html {
         flex-direction: row;
         overflow-x: hidden;
         flex-wrap: wrap;
-        
+        gap: 0px;
      }
 
      .info-container > ul > li {
         /* background: mediumvioletred; */
-        width: 150px;
+        
      }
 
      .info-container > ul > li {
         padding: 0px;
         margin: 0px;
-        gap: red;
+        width: 250px;
+        /* background: red; */
      }
 
-
+ /* section footer info desktop fin  */
 }
