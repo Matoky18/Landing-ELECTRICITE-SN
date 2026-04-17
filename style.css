@@ -221,7 +221,8 @@ html {
     /* align-items: center; */
     background: hsl(100, 43%, 99%);
     gap: 25px;
-    padding: 50px;
+    padding-inline: 50px;
+    padding-block: 25px;
 }
 
 .avantage > h1 {
@@ -447,6 +448,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-block: 25px;
     /* padding: 250px; */
 }
 
@@ -465,7 +467,7 @@ html {
     /* background: red; */
     /* width: 100%; */
     margin-inline: 50px;
-    margin-bottom: 25px;
+    margin-block: 25px;
 
 }
 .avis-container-mobile > h3:nth-child(1)  {
