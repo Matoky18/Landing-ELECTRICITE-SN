@@ -486,7 +486,7 @@ html {
     height: 70%;
     width: 100%;
     max-width: 500px;
-    gap: 25px;
+    gap: 50px;
     overflow-y: scroll;
     box-sizing: border-box;
     margin-top: 50px;
@@ -541,6 +541,11 @@ html {
 
 
 /* section avis fin */
+
+
+
+
+
 
 
 
@@ -897,18 +902,33 @@ html {
     /* section avantage */
     .avantage {
         height: auto;
-        background: darkblue;
+        /* background: darkblue; */
+        padding-top: 25px;
+        margin-bottom: 75px;
         /* display: none; */
     }
+
+      .avantage {
+        /* background: transparent; */
+     }
+
+     .avantage > h1 {
+        font-size: 3rem;
+     }
+
+
+     .avantage > ul > li {
+        height: 300px;
+        width: 450px;
+     }
+
 
     .avantage > ul {
         display: flex;
         flex-direction: row;
     }
 
-    .avantage > ul > li {
-        width: 300px;
-    }
+    
 
     /* section avantage fin */
 
@@ -937,7 +957,7 @@ html {
 
 
 
-     /* section avis */
+     /* section avis desktop */
      .avis-container-mobile {
         display: none;
      }
@@ -962,7 +982,7 @@ html {
         width: 50vw;
      }
 
-     .avis-container-desktop > ul > .span > h1 {
+     .avis-container-desktop > ul >  .span > h1 {
         background: linear-gradient(90deg,#000F89,#044370);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1020,20 +1040,28 @@ html {
     }
 
 
-    .avis-container-desktop > ul > .ul > li > p {
+    .avis-container-desktop >  ul > .viewport-slider > .ul > li > p {
         text-align: center;
         /* background: maroon; */
         font-family: "Source Serif" ,serif;
         font-weight: 100;
         font-size: large;
         letter-spacing: 2px;
-        margin-top: 25px;
+        /* margin-top: 25px; */
+        padding: 0px;
     } 
 
      .avis-container-desktop ul > .ul > li > .stars > .star > svg {
         width: 25px;
         color: red;
      }
+     .avis-container-desktop ul > .ul > li > .stars {
+        /* background: hotpink; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 
      .avis-container-desktop  span {
         height: 100%;
@@ -1058,29 +1086,7 @@ html {
 
 
 
-     /* section avantage */
-
-     .avantage {
-        background: transparent;
-     }
-
-     .avantage > h1 {
-        font-size: 3rem;
-     }
-
-
-     .avantage > ul {
-        display: flex;
-        flex-direction: row;
-     }
-     .avantage > ul > li {
-        height: 300px;
-        width: 450px;
-     }
-
-    
-
-     /* section avantage fin*/
+  
 
      .info-container {
         /* background: rebeccapurple; */
