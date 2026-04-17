@@ -27,3 +27,12 @@ ctabutton.forEach(cta => {
 
 
 // cta bouton fin
+
+const contactezNous = document.getElementById("contactez-nous")
+console.log(contactezNous)
+
+contactezNous.addEventListener("click",()=>{
+    console.log("clicked")
+    document.getElementById("footer").scrollIntoView({behavior: "smooth"})
+
+})
